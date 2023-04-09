@@ -17,7 +17,7 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div class="min-h-screen bg-white-100 dark:bg-white-900">
         @include('layouts.navigation')
 
         <!-- Page Heading -->
@@ -34,6 +34,11 @@
             {{ $slot }}
         </main>
     </div>
+
 </body>
+<style>
+    
+</style>
+@include('sweetalert::alert', ['cdn' => 'https://cdn.jsdelivr.net/npm/sweetalert2@9'])
 
 </html>
